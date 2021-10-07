@@ -1,5 +1,5 @@
 # TPS-Game_Zombie
-
+ing....
 ### Develop a game project using Unity, A game to kill zombies with gun 
 
 >*플레이어 상태, 공격, 움직임, 입력 Scipt* 구현 <br>
