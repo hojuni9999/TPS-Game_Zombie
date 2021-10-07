@@ -50,7 +50,9 @@ private IEnumerator UpdatePath() {
   
   #### 게임 실행화면
   
-  ![alt 실행이미지](https://user-images.githubusercontent.com/83167302/135275058-954ab699-dda4-4444-8315-34b026f6cd0d.PNG)
+  ![1](https://user-images.githubusercontent.com/83167302/136426928-a71ae11d-5e7f-4842-bb68-04121a936b15.PNG)
+  
+  ![2](https://user-images.githubusercontent.com/83167302/136426957-3b0d2ba6-3419-4ded-ad87-0c5ad01641b9.PNG)
   
   > ### UI <br>
    플레이어 체력바를 하단에 동그라미로 배치 <br>
