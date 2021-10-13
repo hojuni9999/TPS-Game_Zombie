@@ -62,3 +62,5 @@ private IEnumerator UpdatePath() {
 
 좀비를 프로퍼티(객체화)화 하고 랜덤으로 생성하게 만들기, UI 수정 
 스테이지 추가, 좀비 능력치 변화
+
+photon을 이용한 네트워크로 멀티플레이 가능
