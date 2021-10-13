@@ -12,31 +12,43 @@ public class LobbyManager : MonoBehaviourPunCallbacks {
 
     // 게임 실행과 동시에 마스터 서버 접속 시도
     private void Start() {
-        
+        PhotonNetwork.GameVersion = gameVersion; // 접속에 필요한 정보
+        PhotonNetwork.ConnectUsingSettings(); // 설정한 정보로 마스터 서버 접속 시도
+        joinButton.interactable = false;
+        connectionInfoText.text = "마스터 서버에 접속 중...";
     }
 
     // 마스터 서버 접속 성공시 자동 실행
     public override void OnConnectedToMaster() {
-        
+        joinButton.interactable = true;
+        connectionInfoText.text = "온라인: 마스터 서버와 연결됨";
     }
 
     // 마스터 서버 접속 실패시 자동 실행
     public override void OnDisconnected(DisconnectCause cause) {
-        
+        joinButton.interactable = false;
+        connectionInfoText.text = "오프라인: 마스터 서버와 연결되지 않음\n 접속 재시동중...";
+        PhotonNetwork.ConnectUsingSettings(); // 마스터 서버와 재접속 시도
     }
 
-    // 룸 접속 시도
+    // 룸 접속 시도 (조인 버튼을 누르면 호출이 됨)
     public void Connect() {
-        
+        if (PhotonNetwork.IsConnected)
+        {
+            connectionInfoText.text = "룸에 접속...";
+            PhotonNetwork.JoinRandomRoom();
+        }
     }
 
     // (빈 방이 없어)랜덤 룸 참가에 실패한 경우 자동 실행
     public override void OnJoinRandomFailed(short returnCode, string message) {
-        
+        connectionInfoText.text = "빈 방이 없음, 새로운 방 생성...";
+        PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = 4 });
     }
 
     // 룸에 참가 완료된 경우 자동 실행
     public override void OnJoinedRoom() {
-        
+        connectionInfoText.text = "방 참가 성공...";
+        PhotonNetwork.LoadLevel("Main");
     }
 }
