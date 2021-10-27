@@ -618,7 +618,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523761044}
-  m_LocalRotation: {x: 0.41852278, y: 0.34116715, z: -0.17336337, w: 0.8236436}
+  m_LocalRotation: {x: 0.4185228, y: 0.34116718, z: -0.1733634, w: 0.8236436}
   m_LocalPosition: {x: -8, y: 16, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1227,6 +1227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1277106191}
+  - component: {fileID: 1277106192}
   m_Layer: 0
   m_Name: Gun Pivot
   m_TagString: Untagged
@@ -1249,6 +1250,22 @@ Transform:
   m_Father: {fileID: 1314704332}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1277106192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277106190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29541599103404782762fa0b0a9804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchDelay: 1
+  weapon:
+  - {fileID: 1784282725167592, guid: 13259943c4d634186ac994d570bb3253, type: 3}
+  - {fileID: 1669814075106190, guid: ea530e89dc913d14480baec0a57c7801, type: 3}
 --- !u!1001 &1314704324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1982,7 +1999,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733712910}
-  m_LocalRotation: {x: 0.41852278, y: 0.34116715, z: -0.17336337, w: 0.8236436}
+  m_LocalRotation: {x: 0.4185228, y: 0.34116718, z: -0.1733634, w: 0.8236436}
   m_LocalPosition: {x: -8, y: 16, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
