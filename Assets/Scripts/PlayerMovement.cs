@@ -39,11 +39,11 @@ public class PlayerMovement : MonoBehaviour {
 
     // 입력값에 따라 캐릭터를 좌우로 회전
     private void Rotate() {
-        //float turn = playerInput.rotate * rotateSpeed * Time.deltaTime;
+        //float turn = playerInput.rotate * rotateSpeed * Time.deltaTime; // 키보드로 회전하는 방법
         //playerRigidbody.rotation = playerRigidbody.rotation * Quaternion.Euler(0, turn, 0f);
 
-        float turn = Input.GetAxis("Mouse X");
+        float turn = Input.GetAxis("Mouse X"); //마우스로 회전하는 방법
         transform.Rotate(Vector3.up * rotateSpeed * turn);
-        
+
     }
 }
