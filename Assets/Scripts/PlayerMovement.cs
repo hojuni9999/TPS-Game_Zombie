@@ -9,6 +9,13 @@ public class PlayerMovement : MonoBehaviour {
     private Rigidbody playerRigidbody; // 플레이어 캐릭터의 리지드바디
     private Animator playerAnimator; // 플레이어 캐릭터의 애니메이터
 
+    GameObject nearObject;
+
+    bool iDown; // 무기 줍는 키
+
+    public GameObject[] weapons; // 무기 배열, 가지고 있는 무기 배열
+    public bool[] hasweapons;
+
     private void Start() {
         // 사용할 컴포넌트들의 참조를 가져오기
         playerInput = GetComponent<PlayerInput>();
@@ -45,5 +52,39 @@ public class PlayerMovement : MonoBehaviour {
         float turn = Input.GetAxis("Mouse X"); //마우스로 회전하는 방법
         transform.Rotate(Vector3.up * rotateSpeed * turn);
 
+    }
+
+    void GetInput()
+    {
+        iDown = Input.GetButtonDown("Interation"); // 무기 줍는 키 설정
+    }
+
+    void Interation()
+    {
+        if(iDown && nearObject != null)
+        {
+            if(nearObject.tag == "Grenade" || nearObject.tag == "Knife" || nearObject.tag =="Ak")
+            {
+                Item item = nearObject.GetComponent<Item>();
+                int weaponIndex = item.value;
+                hasweapons[weaponIndex] = true;
+
+                Destroy(nearObject);
+            }
+        }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Weapon")
+            nearObject = other.gameObject;
+
+        Debug.Log(nearObject.name);
+    }
+
+    void OnTriggerEixt(Collider other)
+    {
+        if (other.tag == "Weapon")
+            nearObject = null;
     }
 }

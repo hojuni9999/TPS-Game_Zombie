@@ -11,13 +11,7 @@ public class AK47 : MonoBehaviour, IItem
         Gun gun = target.GetComponent<Gun>();
 
         // PlayerShooter 컴포넌트가 있으며, 총 오브젝트가 존재하면
-        void OnTriggerEnter(Collider other)
-        {
-            if (other.tag == "ak")
-            {
-                Debug.Log("good");
-            }
-        }
+        
 
         // 사용되었으므로, 자신을 파괴
         Destroy(gameObject);

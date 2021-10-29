@@ -4,9 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - uzi
+  - Weapon
   - ak
-  - knife
   layers:
   - Default
   - TransparentFX
