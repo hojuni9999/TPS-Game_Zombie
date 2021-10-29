@@ -10,8 +10,17 @@ public class Gun : MonoBehaviour {
         Reloading // 재장전 중
     }
 
+    public GameObject[] gameObjects;
+    // 총의 종류
+    public enum Weapon
+    {
+        Uzi,
+        Ak
+    }
 
     public State state { get; private set; } // 현재 총의 상태
+
+    public Weapon weapon { get; set; } // 현재 총의 종류
 
     public Transform fireTransform; // 총알이 발사될 위치
 
@@ -51,6 +60,7 @@ public class Gun : MonoBehaviour {
         magAmmo = magCapacity;  // 탄창을 가득 채움
         state = State.Ready;    // 총을 쏠 준비가 된 상태
         lastFireTime = 0;       // 마지막으로 총을 쏜 시점을 초기화
+        weapon = Weapon.Uzi; // 기본 총으로 변경
     }
 
     // 발사 시도
@@ -141,4 +151,6 @@ public class Gun : MonoBehaviour {
         // 총의 현재 상태를 발사 준비된 상태로 변경
         state = State.Ready;
     }
+
+    
 }
