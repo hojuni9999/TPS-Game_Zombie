@@ -34,7 +34,7 @@ public class Gun : MonoBehaviour {
     public AudioClip reloadClip; // 재장전 소리
 
     public float damage = 25; // 공격력
-    private float fireDistance = 50f; // 사정거리
+    public float fireDistance = 50f; // 사정거리
 
     public int ammoRemain = 100; // 남은 전체 탄약
     public int magCapacity = 25; // 탄창 용량
