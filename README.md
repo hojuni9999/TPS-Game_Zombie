@@ -59,5 +59,34 @@ private IEnumerator UpdatePath() {
    피 튀기는 효과, 총알 자국등 Effect
    
 
-각 Wave마다 좀비들 능력치 향샹 및 좀비 수 
+### 게임설명 ppt
+
+>1
+![슬라이드1](https://user-images.githubusercontent.com/83167302/139575010-0fd24090-5869-4c04-ab5e-1bf311e82dac.PNG)
+2
+![슬라이드2](https://user-images.githubusercontent.com/83167302/139575013-ec8f6eda-1c45-45a1-8ad4-8ddfe8bc8614.PNG)
+3
+![슬라이드3](https://user-images.githubusercontent.com/83167302/139575014-9f7e4ce5-2576-4f8b-b9b2-99d42a37f6cc.PNG)
+4
+![슬라이드4](https://user-images.githubusercontent.com/83167302/139575016-99f9cca6-e9cf-41ad-8a92-eba625913e60.PNG)
+5
+![슬라이드5](https://user-images.githubusercontent.com/83167302/139575017-98fe61d6-fd96-4d51-916b-7e38ffb57c68.PNG)
+6
+![슬라이드6](https://user-images.githubusercontent.com/83167302/139575018-26a03551-da79-4136-b885-7cc39fa1f150.PNG)
+7
+![슬라이드7](https://user-images.githubusercontent.com/83167302/139575020-b3f986ae-587c-4a04-b4ff-2129123bf229.PNG)
+8
+![슬라이드8](https://user-images.githubusercontent.com/83167302/139575023-a0a8d93e-3d1c-467a-88b9-20844e730971.PNG)
+9
+![슬라이드9](https://user-images.githubusercontent.com/83167302/139575024-0008ca0d-91b7-4fac-b31e-18d0d01d0708.PNG)
+10
+![슬라이드10](https://user-images.githubusercontent.com/83167302/139575027-90e70aec-9847-4967-af0b-4fed3244e665.PNG)
+11
+![슬라이드11](https://user-images.githubusercontent.com/83167302/139575028-5f4ba648-c36c-443f-9732-97c80d105b81.PNG)
+12
+![슬라이드12](https://user-images.githubusercontent.com/83167302/139575030-813b571f-874b-460e-b676-eae12cf08c0a.PNG)
+13
+![슬라이드13](https://user-images.githubusercontent.com/83167302/139575031-1efbf34d-c692-4036-9abf-ca3b90a6a3bb.PNG)
+14
+![슬라이드14](https://user-images.githubusercontent.com/83167302/139575032-115d4b0a-0993-4f26-9152-b233ae07a545.PNG)
 
