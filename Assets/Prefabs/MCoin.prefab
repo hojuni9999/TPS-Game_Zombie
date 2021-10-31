@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7738797869219060489}
   - component: {fileID: 7711979679067391845}
   - component: {fileID: 7715592793698467315}
-  - component: {fileID: 5632529053212509696}
+  - component: {fileID: -396962540072650623}
   m_Layer: 0
   m_Name: MCoin
   m_TagString: Untagged
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 60
---- !u!114 &5632529053212509696
+--- !u!114 &-396962540072650623
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,9 +132,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7674601387796519591}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8041ec29d8996b47bc079a428bf2ef4, type: 3}
+  m_Script: {fileID: 11500000, guid: 905c84ebc955d2d439771d615ac30e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poison: 50
 --- !u!1 &7676326993278910861
 GameObject:
   m_ObjectHideFlags: 0

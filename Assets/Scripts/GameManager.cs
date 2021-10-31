@@ -3,6 +3,7 @@
 // 점수와 게임 오버 여부를 관리하는 게임 매니저
 public class GameManager : MonoBehaviour {
     // 싱글톤 접근용 프로퍼티
+
     public static GameManager instance
     {
         get

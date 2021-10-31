@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8605092870697903105}
   - component: {fileID: 3322777172229148558}
   - component: {fileID: 2390092591030950840}
-  - component: {fileID: 2617150592818685074}
+  - component: {fileID: 4220884872809596013}
   m_Layer: 0
   m_Name: Hand_Grenade
   m_TagString: Untagged
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 60
---- !u!114 &2617150592818685074
+--- !u!114 &4220884872809596013
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,6 +182,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 593018828945997134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 293e96223df66eb4190c976ad13ffc38, type: 3}
+  m_Script: {fileID: 11500000, guid: 905c84ebc955d2d439771d615ac30e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poison: 50

@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour {
     private Rigidbody playerRigidbody; // 플레이어 캐릭터의 리지드바디
     private Animator playerAnimator; // 플레이어 캐릭터의 애니메이터
 
+    public GameObject p;
 
     private void Start() {
         // 사용할 컴포넌트들의 참조를 가져오기

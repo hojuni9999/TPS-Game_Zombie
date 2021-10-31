@@ -9,6 +9,8 @@ public class LivingEntity : MonoBehaviour, IDamageable {
     public bool dead { get; protected set; } // 사망 상태
     public event Action onDeath; // 사망시 발동할 이벤트
 
+    
+
     // 생명체가 활성화될때 상태를 리셋
     protected virtual void OnEnable() {
         // 사망하지 않은 상태로 시작
@@ -39,6 +41,23 @@ public class LivingEntity : MonoBehaviour, IDamageable {
 
         // 체력 추가
         health += newHealth;
+    }
+
+    // 체력을 감소시키는 기능
+    public virtual void Slowdamage(float damage)
+    {
+       
+        if (dead)
+        {
+            // 이미 사망한 경우 체력을 회복할 수 없음
+            return;
+        }
+       
+
+        // 체력 감소
+        health -= damage;
+        
+        
     }
 
     // 사망 처리
