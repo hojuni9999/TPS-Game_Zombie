@@ -1,5 +1,5 @@
 # TPS-Game_Zombie
-ing....
+
 ### Develop a game project using Unity, A game to kill zombies with gun 
 
 >*플레이어 상태, 공격, 움직임, 입력 Scipt* 구현 <br>
@@ -60,6 +60,4 @@ private IEnumerator UpdatePath() {
    
 
 각 Wave마다 좀비들 능력치 향샹 및 좀비 수 
-#### 추후 개선 사항
 
-photon을 이용한 네트워크로 멀티플레이 가능
